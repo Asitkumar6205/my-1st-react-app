@@ -1,13 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import reportWebVitals from './reportWebVitals';
-import Data from './Data';
-import 'tachyons';
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
 
+const rootElement = document.getElementById("root");
 ReactDOM.render(
-  <Data/>
-  ,document.getElementById('root')
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  rootElement
 );
-
-reportWebVitals();
